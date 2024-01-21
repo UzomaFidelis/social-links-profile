@@ -18,7 +18,7 @@
   align-items: center;
   min-height: 100vh;
   background-color: vars.$off-black;
-  margin: 0;
+  margin: 0px;
 
   &__info {
     &_color {
@@ -43,6 +43,7 @@
   align-items: center;
   padding: 1.4rem 1.4rem 0.5rem;
   border-radius: 8px;
+  margin: 20px;
 
   &_bgcolor_dark {
     background-color: vars.$dark-grey;

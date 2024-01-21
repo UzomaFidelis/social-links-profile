@@ -15,7 +15,7 @@
   align-items: center;
   min-height: 100vh;
   background-color: hsl(0, 0%, 8%);
-  margin: 0;
+  margin: 0px;
 }
 .content__info_color_white {
   color: hsl(0, 0%, 100%);
@@ -34,6 +34,7 @@
   align-items: center;
   padding: 1.4rem 1.4rem 0.5rem;
   border-radius: 8px;
+  margin: 20px;
 }
 .person_bgcolor_dark {
   background-color: hsl(0, 0%, 12%);
