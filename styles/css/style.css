@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../../assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+.content {
+  font-family: Inter, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 8%);
+  margin: 0;
+}
+.content__info_color_white {
+  color: hsl(0, 0%, 100%);
+}
+.content__info_color_green {
+  color: hsl(75, 94%, 57%);
+}
+.content__info_smbold {
+  font-weight: 600;
+}
+
+.person {
+  width: 20.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.4rem 1.4rem 0.5rem;
+  border-radius: 8px;
+}
+.person_bgcolor_dark {
+  background-color: hsl(0, 0%, 12%);
+}
+.person__name {
+  font-size: 1.47rem;
+  margin: 0;
+  text-align: center;
+}
+.person__img {
+  width: 5.55rem;
+  border-radius: 50%;
+  margin-bottom: 1.71rem;
+}
+.person__location {
+  margin: 0.56rem 0;
+  font-size: 0.88rem;
+  text-align: center;
+}
+.person__bio {
+  font-size: 0.88rem;
+  margin: 1.12rem 0 0.6rem;
+  text-align: center;
+}
+.person__socials {
+  padding-left: 0;
+  margin: 0;
+  width: 100%;
+}
+.person__socials-list {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  margin: 1.1rem 0;
+  border-radius: 10px;
+}
+.person__socials-list_bgcolor_grey {
+  background-color: hsl(0, 0%, 20%);
+}
+.person__socials-list:hover {
+  background-color: hsl(75, 94%, 57%);
+}
+.person__socials-list:hover .person__socials-link {
+  color: hsl(0, 0%, 12%);
+}
+.person__socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  height: 3em;
+  width: 100%;
+  text-decoration: none;
+  caret-color: hsl(0, 0%, 12%);
+}
+
+@media (min-width: 1000px) {
+  .person {
+    width: 24rem;
+    padding: 2.45rem 2.45rem 1.33rem;
+    margin: 0;
+  }
+  .person__img {
+    margin-bottom: 1.74rem;
+  }
+  .person__location {
+    margin: 0.6rem 0;
+  }
+  .person__bio {
+    margin-bottom: 0.53rem;
+  }
+  .person__socials-list {
+    margin: 1.11rem 0;
+  }
+  .person__socials__link {
+    height: 3.02rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

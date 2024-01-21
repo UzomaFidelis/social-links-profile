@@ -1,0 +1,142 @@
+@use "variables" as vars;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../../assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+.content {
+  font-family: Inter, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: vars.$off-black;
+  margin: 0;
+
+  &__info {
+    &_color {
+      &_white {
+        color: vars.$white;
+      }
+      &_green {
+        color: vars.$green;
+      }
+    }
+
+    &_smbold {
+      font-weight: 600;
+    }
+  }
+}
+
+.person {
+  width: 20.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.4rem 1.4rem 0.5rem;
+  border-radius: 8px;
+
+  &_bgcolor_dark {
+    background-color: vars.$dark-grey;
+  }
+
+  &__name {
+    font-size: 1.47rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  &__img {
+    width: 5.55rem;
+    border-radius: 50%;
+    margin-bottom: 1.71rem;
+  }
+
+  &__location {
+    margin: 0.56rem 0;
+    font-size: 0.88rem;
+    text-align: center;
+  }
+
+  &__bio {
+    font-size: 0.88rem;
+    margin: 1.12rem 0 0.6rem;
+    text-align: center;
+  }
+
+  &__socials {
+    $container: &;
+    padding-left: 0;
+    margin: 0;
+    width: 100%;
+
+    &-list {
+      list-style: none;
+      width: 100%;
+      text-align: center;
+      margin: 1.1rem 0;
+      border-radius: 10px;
+
+      &_bgcolor_grey {
+        background-color: vars.$grey;
+      }
+
+      &:hover {
+        background-color: vars.$green;
+
+        #{$container}-link {
+          color: vars.$dark-grey;
+        }
+      }
+    }
+
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.9rem;
+      height: 3em;
+      width: 100%;
+      text-decoration: none;
+      caret-color: vars.$dark-grey;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .person {
+    width: 24rem;
+    padding: 2.45rem 2.45rem 1.33rem;
+    margin: 0;
+
+    &__img {
+      margin-bottom: 1.74rem;
+    }
+
+    &__location {
+      margin: 0.6rem 0;
+    }
+
+    &__bio {
+      margin-bottom: 0.53rem;
+    }
+
+    &__socials {
+      &-list {
+        margin: 1.11rem 0;
+      }
+
+      &__link {
+        height: 3.02rem;
+      }
+    }
+  }
+}
